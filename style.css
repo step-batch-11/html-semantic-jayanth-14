@@ -32,17 +32,18 @@ header hgroup {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3%;
+  gap: 5%;
 }
 
 header hgroup h1 {
   font-size: 82px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 header hgroup p {
-  font-size: 42px;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: 200;
+  color: #333;
 }
 
 nav {
@@ -95,12 +96,11 @@ body > footer time {
 }
 
 dialog {
-  padding: 10px;
-  width: 100%;
-  background-color: #97d3ad;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 19px;
+  margin: 0 auto;
+  background-color: #59ac77;
 }
 
 /* Article styling */
@@ -119,6 +119,7 @@ main article hgroup p {
   font-size: 22px;
   font-weight: 300;
   text-transform: capitalize;
+  color: #555;
 }
 
 time,
@@ -150,6 +151,17 @@ main article section p {
   letter-spacing: 0.01em;
 }
 
+main article section mark {
+  padding: 10px 5px;
+  background-color: yellowgreen;
+  margin-top: 10px;
+}
+
+main article section mark data {
+  color: #000;
+  font-weight: 700;
+}
+
 main article section figure {
   width: 100%;
   margin: 30px 0px;
@@ -167,7 +179,7 @@ main article section figure figcaption {
 }
 
 main article section details {
-  background-color: #97d3ad;
+  background-color: yellowgreen;
   padding: 20px;
   font-size: 26px;
   font-weight: 200;
@@ -185,10 +197,13 @@ main article section details data {
 
 main article section aside {
   background-color: #eee;
-  margin: 20px;
+  margin: 20px 0px;
   padding: 20px;
 }
-
+main article section aside data {
+  color: #333;
+  font-weight: 600;
+}
 main article section aside a {
   color: #59ac77;
   text-decoration: none;
@@ -211,9 +226,10 @@ main article footer address {
   align-items: center;
 }
 main article footer address a {
-  color: #59ac77;
+  color: #000;
   text-decoration: none;
   font-size: 20px;
+  font-weight: 600;
 }
 
 main article footer address a:hover {
