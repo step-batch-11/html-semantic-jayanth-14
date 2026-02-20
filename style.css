@@ -16,6 +16,7 @@ body {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -23,13 +24,6 @@ header {
   height: 60vh;
   background: linear-gradient(#59ac77, #69bf88, #8bc09e);
   overflow: visible;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column; */
-  /* display: grid;
-  grid-template-rows: 8fr 2fr;
-  overflow: auto; */
 }
 
 header hgroup {
@@ -84,4 +78,144 @@ nav ul li a {
 
 nav ul li a:hover {
   border-bottom: 2px solid white;
+}
+
+/* Footer styling */
+body > footer {
+  padding: 20px 30px;
+  background-color: #59ac77;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+
+body > footer time {
+  color: #000;
+  font-weight: 500;
+}
+
+dialog {
+  padding: 10px;
+  width: 100%;
+  background-color: #97d3ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Article styling */
+main {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+main article hgroup {
+  margin: 20px 0px;
+}
+main article hgroup h2 {
+  font-size: 52px;
+}
+main article hgroup p {
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+time,
+strong,
+data {
+  color: #59ac77;
+}
+
+main article section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 40px 0px;
+  border-bottom: 5px solid #59ac77;
+}
+
+main article section h3 {
+  font-size: 62px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+main article section p {
+  margin: 5px 0px;
+  font-size: 29px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+main article section figure {
+  width: 100%;
+  margin: 30px 0px;
+  background-color: #59ac77;
+}
+
+main article section figure img {
+  width: 100%;
+}
+
+main article section figure figcaption {
+  padding: 15px 30px;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+main article section details {
+  background-color: #97d3ad;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: 200;
+}
+
+main article section details summary {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+main article section details data {
+  color: #000;
+  font-weight: 500;
+}
+
+main article section aside {
+  background-color: #eee;
+  margin: 20px;
+  padding: 20px;
+}
+
+main article section aside a {
+  color: #59ac77;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+main article section aside a:hover {
+  border-bottom: 1px solid #59ac77;
+}
+
+main article footer {
+  background-color: white;
+}
+
+main article footer address {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main article footer address a {
+  color: #59ac77;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+main article footer address a:hover {
+  text-decoration: underline;
 }
